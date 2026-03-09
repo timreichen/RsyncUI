@@ -1,5 +1,5 @@
 //
-//  EditTabView.swift
+//  TaskOverview.swift
 //  RsyncUI
 //
 //  Created by Thomas Evensen on 28/12/2025.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct EditTabView: View {
+struct TaskOverview: View {
     @Bindable var rsyncUIdata: RsyncUIconfigurations
     @State private var selecteduuids = Set<SynchronizeConfiguration.ID>()
     @State private var notasks: Bool = false
