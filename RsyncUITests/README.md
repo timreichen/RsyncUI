@@ -65,11 +65,10 @@ Comprehensive tests for configuration validation covering:
 - Empty server with username
 - Empty username with server
 
-#### 📁 Trailing Slash Handling Tests
-- Add a trailing slash to the source path when enabled
-- Preserve paths when disabled
-- Leave the destination path unchanged
-- Avoid duplicating an existing source trailing slash
+#### 📁 Catalog Path Preservation Tests
+- Preserve paths without trailing slashes
+- Preserve paths with trailing slashes
+- Preserve paths with various separators
 
 #### 📸 Snapshot Validation Tests
 - Reject without rsync v3
@@ -128,7 +127,7 @@ Current coverage focuses on Priority 1: Configuration Validation
 ### Covered ✅
 - Configuration creation and validation
 - SSH parameter validation
-- Trailing slash handling
+- Catalog path preservation
 - Snapshot/syncremote task validation
 - Empty/missing field rejection
 - Edge case handling
